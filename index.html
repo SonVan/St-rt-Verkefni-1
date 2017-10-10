@@ -1,112 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html class="grid" lang="is">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Fooþjónustan | Forsíða</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!--<link rel="stylesheet" href="grid.css">-->
   </head>
   <body>
     <header>
       <div class="container">
         <div id="branding">
-          <h3>Fooþjónustan</h3>
+          <a href="index.html">Fooþjónustan</a>
         </div>
         <nav>
           <ul>
             <li><a href="about.html">Um</a></li>
-            <li><a href="buy.html" class="bigButton">Kaupa</a></li>
+            <li><a href="buy.html" class="buyButton">Kaupa</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
+    <background>
+      <div class="indexBackground"></div>
+    </background>
     <section id="showcase">
-      <div class="container">
-        <h2>Í fyrsta skipti á Íslandi</h2>
-        <h1>Fooþjónustan</h1>
-        <li><a href="buy.html">Kaupa</a></li>
-      </div>
-    </section>
-
-    <section id="advertise">
-      <div class="container">
-        <div class="checklist">
-          <div class="check">
-            <div class="check__icon">
-              <img src="check.svg">
-            </div>
-            <div class="check__text">
-              <h3>Ódýr og góð þjónusta</h3>
-              <p>Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
-            </div>
+        <div class="container">
+          <div class="title">
+            <h2>Í fyrsta skipti á Íslandi</h2>
+            <h1>Fooþjónustan</h1>
           </div>
-          <div class="check">
-            <div class="check__icon">
-              <img src="check.svg">
-            </div>
-            <div class="check__text">
-              <h3>Þægilegt í amstri dagsins</h3>
-              <p>Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
-            </div>
-          </div>
-          <div class="check">
-            <div class="check__icon">
-              <img src="check.svg">
-            </div>
-            <div class="check__text">
-              <h3>Nauðsynlegt á hvert heimili</h3>
-              <p>Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
-            </div>
+          <div class="button">
+            <a href="buy.html" class="showcaseButton">Kaupa</a>
           </div>
         </div>
-        <div class="imageBesideChecklist">
-          <img src="image.jpg">
-        </div>
-      </div>
     </section>
-
-    <section id="comments">
-      <div class="container">
-        <div class="box">
-          <img src="profile1.jpg" class="circularImage">
-          <p>„Ég get engan vegið hugsað mér lífið án þessarar þjónustu!“</p>
-          <p>Anna Jóns</p>
-          <p>Áskrifandi í þrjá mánuði</p>
+    <main>
+      <section id="advertise">
+        <div class="container row">
+          <div class="checklist col col-6 col-sm-12">
+            <div class="check">
+              <div class="check__text">
+                <h3>Ódýr og góð þjónusta</h3>
+                <p>Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
+              </div>
+            </div>
+            <div class="check">
+              <div class="check__text">
+                <h3>Þægilegt í amstri dagsins</h3>
+                <p>Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
+              </div>
+            </div>
+            <div class="check">
+              <div class="check__text">
+                <h3>Nauðsynlegt á hvert heimili</h3>
+                <p>Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="imageBesideChecklist col col-6 col-sm-12">
+            <img src="image.jpg">
+          </div>
         </div>
-        <div class="box">
-          <img src="profile2.jpg" class="circularImage">
-          <p>„Vá, þetta breytir öllu!“</p>
-          <p>Siggi Páls</p>
-          <p>Áskrifandi í tvo daga</p>
-        </div>
-        <div class="box">
-          <img src="profile3.jpg" class="circularImage">
-          <p>„A+++, mun aldrei hætta í áskrift“</p>
-          <p>Jón Guðrúnarson</p>
-          <p>Áskrifandi í ár</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="buyNow">
-      <div class="container">
-        <h3>Eftir hverju ert þú að bíða?</h3>
-        <li><a href="buy.html" class="bigButton">Kaupa</a></li>
-      </div>
-    </section>
+      <section id="comments">
+        <div class="container row">
+          <div class="box col col-4 col-sm-6">
+            <img src="profile1.jpg" class="circularImage">
+            <div class="comments__text">
+              <div class="comments__quote">
+                <p>„Ég get engan vegið hugsað mér lífið án þessarar þjónustu!“</p>
+              </div>
+              <div class="comments__about">
+                <p>Anna Jóns</p>
+                <p>Áskrifandi í þrjá mánuði</p>
+              </div>
+            </div>
+          </div>
+          <div class="box col col-4 col-sm-6">
+            <img src="profile2.jpg" class="circularImage">
+            <div class="comments__text">
+              <div class="comments__quote">
+                <p>„Vá, þetta breytir öllu!“</p>
+              </div>
+              <div class="comments__about">
+                <p>Siggi Páls</p>
+                <p>Áskrifandi í tvo daga</p>
+              </div>
+            </div>
+          </div>
+          <div class="box col col-4 col-sm-6">
+            <img src="profile3.jpg" class="circularImage">
+            <div class="comments__text">
+              <div class="comments__quote">
+                <p>„A+++, mun aldrei hætta í áskrift“</p>
+              </div>
+              <div class="comments__about">
+                <p>Jón Guðrúnarson</p>
+                <p>Áskrifandi í ár</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="buyNow">
+        <div class="container">
+          <h3>Eftir hverju ert þú að bíða?</h3>
+          <div class="button">
+            <a href="buy.html" class="buyNowButton">Kaupa</a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
-      <div class="container">
-        <div class="footerText">
+      <div class="container above">
+        <div class="footerText col col-3">
           <p>Fooþjónustan<br>123-4567</p>
         </div>
-        <div class="footerText">
+        <div class="footerText col col-3">
           <p>Opið 12-13 alla daga<br>Bargata 1<br>900 Foobar</p>
         </div>
       </div>
-      <div class="container">
+      <div class="container below">
         <div class="footerText">
           <p>© Fooþjónustan 2017</p>
         </div>
