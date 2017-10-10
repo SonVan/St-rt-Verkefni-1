@@ -1,4 +1,4 @@
-/* Global, hefur áhrif á allar síður. */
+/* Global, hefur áhrif allstaðar á allar síður. */
 *, *:before, *:after {
   box-sizing: inherit;
   padding: 0;
@@ -9,14 +9,14 @@ body {
   font-size: 16px;
   line-height: 1.5; }
 
-.container {
-  margin: auto;
-  overflow: hidden; }
-
 h1, h2, h3 { font-family: 'Roboto Slab', serif; }
 h1 { font-size: 4.5em; }
 h2 { font-size: 2.25em; }
 h3 { font-size: 1.5em; }
+
+.container {
+  margin: auto;
+  overflow: hidden; }
 
 /* Style fyrir header sem skarast ekki við neitt annað. */
 header .container {
@@ -93,7 +93,7 @@ button, .button a {
 button:hover, .button a:hover {
   background-color: #333333; }
 
-/* Breiddin á tökkunum er mismunandi svo hér þarf að skilgreina breiddina fyrir ákveðinn takka. */
+/* Breiddin á tökkunum er mismunandi svo það þarf að skilgreina breiddina sér fyrir ákveðinn takka. */
 .showcaseButton {
   padding-left: 0.8em;
   padding-right: 0.8em; }
@@ -126,8 +126,8 @@ main {
   overflow: hidden; }
 
 main section {
-  margin-top: 10em;
-  margin-bottom: 10em; }
+  margin-top: 12em;
+  margin-bottom: 12em; }
 
 img { width: 100%; }
 
@@ -137,8 +137,6 @@ img { width: 100%; }
   margin-right: -10px;
   margin-bottom: 20px;
   margin-left: -10px; }
-
-#advertise p { font-size: 1.125em; }
 
 .col {
   padding-right: 10px;
@@ -162,16 +160,26 @@ img { width: 100%; }
       width: 25%; } }
 
 /* Style fyrir "advertise" (efsti parturinn á main). */
+#advertise p {
+  font-size: 1.125em;
+  padding-left: 2.35em; }
+
+#advertise h3 {
+  padding-left: 1.75em;
+  background-image: url("check.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.5em; }
+
 .check {
   display: flex;
   height: 33.33333%;
-  align-items: center;
+  align-items: center; }
 
-  }
 .check__icon {
   position: relative;
-  top: ;
-}
+  top: ; }
+
 .checkIcon {
   width: 2em;
   margin-right: 10px; }
@@ -198,36 +206,41 @@ margin-bottom: 0.3em; }
 
 .comments__about p:nth-of-type(1) {
   font-weight: bold; }
+
 .comments__about p:nth-of-type(2) {
   font-size: 0.875em; }
 
 /* Style fyrir "buyNow" (neðsti parturinn á main). */
 #buyNow {
   text-align: center;
-  margin-top: -4em;}
+  margin-top: -4em;
+  margin-bottom: 5em;}
 
 #buyNow .button {
-  margin: 1em;
-}
-.buyNowButton {
+  margin: 1em; }
+
+.buyNowButton { /* Breiddin fyrir buyNow takkann. */
   padding-left: 2em;
-  padding-right: 2em;
-}
+  padding-right: 2em; }
 
 /* Style fyrir footer. */
 footer {
-  background-color: #333333;
-  color: #fff;
+  color: #e6e6e6;
   text-align: center;
-}
+  background-color: #333333; }
+
+footer .container {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em; }
 
 footer .above {
   border-bottom: 3px solid #909090;
   display: flex;
   justify-content: center;
-}
+  padding-bottom: 2em; }
 
 footer .below {
+  font-size: 0.875em;
+  color: #999999; }
 
-}
-
+/* Style fyrir breytingar undir 600px skjástærð */
