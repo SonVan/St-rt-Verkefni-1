@@ -61,9 +61,47 @@ main {
       width: 25%; } }
 	  
 	  
-.header_about{
+/* Um Fooþjónustuna */
+
+.aboutBackground {
+  width: 100%;
   height: 500px;
   background: transparent url(bg-subpage.jpg) no-repeat;
   background-size: cover;
-  background-position: 50% 50%;	
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+.aboutBackground .title{
+	color: white;
+	margin: 20px;
+}
+
+blockquote{
+  float: right;
+  width: 50%;
+  margin-left: 5em;
+  padding: 2.5em 2em 2.5em 2em;
+}
+@media (max-width: 599px) {
+    blockquote{
+		width: 100%;
+	}
+}
+
+.quote_sentence{
+	font-size: 1.5em;
+	font-style: italic;
+	padding-bottom: 1em;
+	text-indent: -10px;
+}
+
+.quote_by{
+	font-size: 0.9em;
+}
+
+.wrapped_text{
+	display: inline;
 }
