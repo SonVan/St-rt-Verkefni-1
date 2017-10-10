@@ -215,3 +215,19 @@ margin-bottom: 0.3em; }
 }
 
 /* Style fyrir footer. */
+footer {
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+}
+
+footer .above {
+  border-bottom: 3px solid #909090;
+  display: flex;
+  justify-content: center;
+}
+
+footer .below {
+
+}
+
