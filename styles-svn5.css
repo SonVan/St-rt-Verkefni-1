@@ -4,6 +4,9 @@
   padding: 0;
   margin: 0; }
 
+.container {
+  overflow: hidden; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -13,10 +16,6 @@ h1, h2, h3 { font-family: 'Roboto Slab', serif; }
 h1 { font-size: 4.5em; }
 h2 { font-size: 2.25em; }
 h3 { font-size: 1.5em; }
-
-.container {
-  margin: auto;
-  overflow: hidden; }
 
 /* Style fyrir header sem skarast ekki við neitt annað. */
 header .container {
@@ -71,7 +70,11 @@ header li {
   position: absolute;
   top: 38%; }
 
-#showcase .button { margin-top: 4em; }
+#showcase h2 {
+  font-weight: normal; }
+
+#showcase .button {
+  margin-top: 4em; }
 
 /* .button og .button a -- sameiginlegt fyrir alla stóra takkana á forsíðu og kaupa síðu. */
 .button {
@@ -129,7 +132,8 @@ main section {
   margin-top: 12em;
   margin-bottom: 12em; }
 
-img { width: 100%; }
+img {
+  width: 100%; }
 
 .row {
   display: flex;
@@ -158,6 +162,11 @@ img { width: 100%; }
       width: 50%; }
     .col-sm-3 {
       width: 25%; } }
+  @media (max-width: 399px) {
+    .col-sm2-12 {
+      width: 100%; }
+    .col-sm2-6 {
+      width: 50%; } }
 
 /* Style fyrir "advertise" (efsti parturinn á main). */
 #advertise p {
@@ -171,40 +180,41 @@ img { width: 100%; }
   background-position: left center;
   background-size: 1.5em; }
 
-.check {
+.checklist {
   display: flex;
-  height: 33.33333%;
-  align-items: center; }
+  flex-direction: column; }
 
-.check__icon {
-  position: relative;
-  top: ; }
-
-.checkIcon {
-  width: 2em;
-  margin-right: 10px; }
+.check {
+   margin-top: auto;
+   margin-bottom: auto; }
 
 /* Style fyrir "comments" */
-.box { text-align: center; }
+.box { text-align: center;
+  display: flex;
+  flex-direction: column; }
 
 .circularImage {
   border-radius: 50%;
   width: 80%; }
 
-.comments__text { /* Svo quote og nöfn haldist frá hvor öðru og textinn ruglist ekki í lágu width */
-  height: 10em;
-  overflow-y: auto; }
+.comments__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Lætur alla 3 textana vera í jafn stórum div */
+  margin-top: 1em; }
 
-.comments__quote { /* Til þess að miðja athugasemdirnar lóðrétt */
-min-height: 50%;
-display: inline-flex;
-align-items: center;
-font-size: 1.5em;
-font-style: italic;
-font-weight: bold;
-margin-bottom: 0.3em; }
+.comments__quote {
+  font-size: 1.489em; /* (1.5em) */
+  font-style: italic;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: 0.5em; }
+
+.comments__about {
+  margin-top: auto; }
 
 .comments__about p:nth-of-type(1) {
+  font-size: 1.125em;
   font-weight: bold; }
 
 .comments__about p:nth-of-type(2) {
@@ -244,3 +254,65 @@ footer .below {
   color: #999999; }
 
 /* Style fyrir breytingar undir 600px skjástærð */
+@media (max-width: 599px) {
+  main {
+    padding-left: 20px;
+    margin-right: 20px; }
+
+  main section {
+    margin-top: 6em;
+    margin-bottom: 6em; }
+
+  .checklist, .check {
+    margin-bottom: 2.5em; }
+
+  #advertise {
+    margin-bottom: -6em; }
+
+  .circularImage {
+    width: 100%; }
+
+  .box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em; }
+
+  #buyNow {
+    margin-top: 9em;
+    margin-bottom: 5em; }
+}
+
+/* Style fyrir breytingar undir 400px skjástærð */
+@media (max-width: 399px) {
+  .col {
+    width: 100%; } /* öll column taka 100% width */
+
+  .buyButton {
+    display: none; }
+
+  header nav {
+    padding-right: 15px; }
+
+  .indexBackground {
+    background-position: 0% 0%;
+    background-size: 365%; }
+
+  #showcase {
+    font-size: 0.666em; }
+
+  #showcase .button {
+    margin-top: 6em; }
+
+  #showcase .container {
+    top: 30%; }
+
+  .circularImage {
+    width: 85%; }
+
+  #buyNow .button {
+    font-size: 0.666em; }
+
+  .buyNowButton {
+    padding-left: 4em;
+    padding-right: 4em; }
+}
