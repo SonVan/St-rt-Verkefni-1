@@ -62,54 +62,34 @@ main {
 	  
 
 /* Um Fooþjónustuna */
-.aboutBackground {
-  width: 100%;
-  height: 500px;
-  background: transparent url(bg-subpage.jpg) no-repeat 0% 50%;
-  opacity: 0.8;
-  background-size: cover;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-  
-
-.aboutBackground .title h1{
-  color: white;
-  margin: 20px;
-  font-size: 4em;
-  word-break: break-word;
-}
-
-blockquote{
+.blockquote {
   float: right;
   width: 50%;
+  padding: 2.5em 2em;
   margin-left: 5em;
-  padding: 2.5em 2em 2.5em 2em;
 }
 @media (max-width: 599px) {
-    blockquote{
-		width: 100%;
-	}
+  .blockquote {
+    width: 100%;
+  }
 }
 
-  .quote_sentence{
-    font-size: 1.5em;
-    font-style: italic;
-    padding-bottom: 1em;
-    text-indent: -10px;
-  }
-
-  .quote_by{
-    font-size: 0.9em;
-  }
-
-.wrapped_text{
-	display: inline;
+.quote_sentence {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  font-style: italic;
+  text-indent: -10px;
 }
 
-.about_text{
-	margin-top: 6em;
-    margin-bottom: 6em;
+.quote_by {
+  font-size: 0.9em;
+}
+
+.wrapped_text {
+  display: inline;
+}
+
+.about_text {
+  margin-top: 6em;
+  margin-bottom: 6em;
 }
