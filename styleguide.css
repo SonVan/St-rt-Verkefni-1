@@ -68,15 +68,10 @@ header li {
   justify-content: center;
 }
 
-.background .title{
-	color: white;
-	margin: 20px;
-}
-
 .background .title h1{
-	color: white;
-	margin: 20px;
-	word-break: break-word;
+  color: white;
+  margin: 20px;
+  word-break: break-word;
   font-size: 3.75em;
 }
 
