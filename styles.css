@@ -60,23 +60,26 @@ main {
     .col-sm-3 {
       width: 25%; } }
 	  
-	  
-/* Um Fooþjónustuna */
 
+/* Um Fooþjónustuna */
 .aboutBackground {
   width: 100%;
   height: 500px;
-  background: transparent url(bg-subpage.jpg) no-repeat;
+  background: transparent url(bg-subpage.jpg) no-repeat 0% 50%;
+  opacity: 0.8;
   background-size: cover;
-  background-position: 50% 50%;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
   
-.aboutBackground .title{
-	color: white;
-	margin: 20px;
+
+.aboutBackground .title h1{
+  color: white;
+  margin: 20px;
+  font-size: 4em;
+  word-break: break-word;
 }
 
 blockquote{
@@ -91,17 +94,22 @@ blockquote{
 	}
 }
 
-.quote_sentence{
-	font-size: 1.5em;
-	font-style: italic;
-	padding-bottom: 1em;
-	text-indent: -10px;
-}
+  .quote_sentence{
+    font-size: 1.5em;
+    font-style: italic;
+    padding-bottom: 1em;
+    text-indent: -10px;
+  }
 
-.quote_by{
-	font-size: 0.9em;
-}
+  .quote_by{
+    font-size: 0.9em;
+  }
 
 .wrapped_text{
 	display: inline;
+}
+
+.about_text{
+	margin-top: 6em;
+    margin-bottom: 6em;
 }
