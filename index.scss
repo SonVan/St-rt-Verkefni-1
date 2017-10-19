@@ -1,0 +1,210 @@
+/* Style fyrir opnunarsíðu á forsíðu, ekki fyrir backgroundið á hinar síðurnar */
+.indexBackground {
+  width: 100%;
+  height: 100vh;
+  background: transparent url("bg.jpg") no-repeat fixed 50% 50%;
+  background-size: cover;
+  opacity: 0.85;
+}
+
+#showcase .container { /* stylelint-disable-line */
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  line-height: 1.3;
+  text-align: center;
+}
+
+#showcase h2 { /* stylelint-disable-line */
+  font-weight: normal;
+}
+
+#showcase .button { /* stylelint-disable-line */
+  margin-top: 4em;
+}
+
+/* Breiddin á tökkunum er mismunandi svo það þarf að skilgreina breiddina sér fyrir ákveðinn takka. */
+.showcaseButton {
+  padding-right: 0.8em;
+  padding-left: 0.8em;
+}
+
+/* Animation fyrir opnunarsíðu */
+/* stylelint-disable-line */ #showcase h2,
+#showcase h1,
+#showcase .showcaseButton {
+  opacity: 0;
+  animation: fadein 3s;
+  animation-fill-mode: forwards;
+}
+
+#showcase h2 { /* stylelint-disable-line */
+  animation-delay: 1s;
+}
+#showcase h1 { /* stylelint-disable-line */
+  animation-delay: 2s;
+}
+#showcase .showcaseButton { /* stylelint-disable-line */
+  animation-delay: 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style fyrir main, þ.e. allt sem er inná hvíta svæðinu á síðunni. Hér er flest allt sett í grid. */
+
+/* Style fyrir "advertise" (efsti parturinn á main). */
+#advertise p { /* stylelint-disable-line */
+  padding-left: 2.35em;
+  font-size: 1.125em;
+}
+
+#advertise h3 { /* stylelint-disable-line */
+  padding-left: 1.75em;
+  background-image: url("check.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.5em;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+}
+
+.check {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Style fyrir "comments" */
+.box {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.circularImage {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.comments__text {
+  display: flex;
+  margin-top: 1em;
+  flex-direction: column;
+  flex: 1; /* Lætur alla 3 textana vera í jafn stórum div */
+}
+
+.comments__quote {
+  margin-top: auto;
+  margin-bottom: 0.5em;
+  font-size: 1.489em; /* (1.5em) */
+  font-style: italic;
+  font-weight: bold;
+}
+
+.comments__about {
+  margin-top: auto;
+}
+
+.comments__about p:nth-of-type(1) { /* stylelint-disable-line */
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.comments__about p:nth-of-type(2) { /* stylelint-disable-line */
+  font-size: 0.875em;
+}
+
+/* Style fyrir "buyNow" (neðsti parturinn á main). */
+#buyNow { /* stylelint-disable-line */
+  margin-top: -4em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+#buyNow .button { /* stylelint-disable-line */
+  margin: 1em;
+}
+
+.buyNowButton { /* Breiddin fyrir buyNow takkann. */
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+/* Style fyrir breytingar undir 600px skjástærð */
+@media (max-width: 599px) {
+  main section { /* stylelint-disable-line */
+    margin-top: 6em;
+    margin-bottom: 6em;
+  }
+
+  .checklist,
+  .check {
+    margin-bottom: 2.5em;
+  }
+
+  #advertise { /* stylelint-disable-line */
+    margin-bottom: -6em;
+  }
+
+  .circularImage {
+    width: 100%;
+  }
+
+  .box {
+    margin-top: 5em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #buyNow { /* stylelint-disable-line */
+    margin-top: 9em;
+    margin-bottom: 5em;
+  }
+}
+
+/* Style fyrir breytingar undir 400px skjástærð */
+@media (max-width: 399px) {
+  .buyButton {
+    display: none;
+  }
+
+  .indexBackground {
+    background-position: 0% 0%;
+    background-size: 365%;
+  }
+
+  #showcase { /* stylelint-disable-line */
+    font-size: 0.666em;
+  }
+
+  #showcase .button { /* stylelint-disable-line */
+    margin-top: 6em;
+  }
+
+  #showcase .container { /* stylelint-disable-line */
+    top: 30%;
+  }
+
+  .circularImage {
+    width: 85%;
+  }
+
+  #buyNow .button { /* stylelint-disable-line */
+    font-size: 0.666em;
+  }
+
+  .buyNowButton {
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+}

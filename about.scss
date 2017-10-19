@@ -1,0 +1,33 @@
+/* Um Fooþjónustuna */
+.blockquote {
+  float: right;
+  width: 50%;
+  padding: 2.5em 2em;
+  margin-left: 5em;
+}
+
+@media (max-width: 599px) {
+  .blockquote {
+    width: 100%;
+  }
+}
+
+.quote_sentence {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  font-style: italic;
+  text-indent: -10px;
+}
+
+.quote_by {
+  font-size: 0.9em;
+}
+
+.wrapped_text {
+  display: inline;
+}
+
+.about_text {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}

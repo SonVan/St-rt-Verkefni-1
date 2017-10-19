@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="grid" lang="is">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fooþjónustan | Kaupa</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="grid.css"> -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="https://notendur.hi.is/svn5/vefforritun/stort-verkefni-1/index.html">Fooþjónustan</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://notendur.hi.is/~ths220/vefforritun/StortVerkefni/about.html">Um</a></li>
+            <li><a href="https://notendur.hi.is/~khi4/stort-verkefni1/kaupa.html" class="buyButton">Kaupa</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <background>
+      <div class="background">
+        <div class="title">
+          <h1>Kaupa</h1>
+        </div>
+      </div>
+    </background>
+    <main>
+      <form class="checkout row">
+        <div class="col col-4 col-sm-6">
+          <h3>Persónuupplýsingar</h3>
+          <div class="inputType">
+            Nafn:<br>
+            <input class="input" type="text" name="nafn">
+          </div>
+          <div class="inputType">
+            Kennitala:<br>
+            <input class="input" type="text" name="kennitala" placeholder="123456-7890">
+          </div>
+          <div class="inputType">
+            Kyn:<br>
+            <input class="singleRadio" type="radio" name="kyn" value="Kona"> Kona<br>
+            <input class="singleRadio" type="radio" name="kyn" value="Karl"> Karl<br>
+            <input class="singleRadio" type="radio" name="kyn" value="Annað"> Annað
+          </div>
+          <div class="inputType">
+            Sími:<br>
+            <input class="input" type="text" name="sími" placeholder="+354 812 3456">
+          </div>
+          <div class="inputType">
+            Heimilisfang:<br>
+            <input class="input" type="text" name="heimilisfang">
+          </div>
+          <div class="inputType">
+            <input type="checkbox" name="Skrá mig á póstlista" checked> Skrá mig á póstlista
+          </div>
+        </div>
+
+        <div class="col col-4 col-sm-6">
+          <h3>Greiðsluupplýsingar</h3>
+          <div class="inputType">
+            Greiða með:<br>
+            <select class="input selector" name="kort">
+              <option value="kreditkorti">Kreditkorti</option>
+              <option value="millifærslu">Millifærslu</option>
+              <option value="reiðufé">Reiðufé</option>
+            </select>
+          </div>
+          <div class="inputType">
+            Nafn á korti:<br>
+            <input class="input" type="text" name="nafn á korti">
+          </div>
+          <div class="inputType">
+            Kortanúmer:<br>
+            <input class="input" type="text" name="kortanúmer" placeholder="5999-9999-9999-9999">
+          </div>
+          <div class="inputType">
+            Gildistími:<br>
+            <div class="inlineSelectors">
+              <div class="inlineSelectors__selector">
+                Mán
+                <select name="val">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <div class="inlineSelectors__selector">
+                Ár
+                <select name="val">
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order col col-12">
+          <div class="button orderButton">
+            <input type="submit" value="Panta" class="orderButton">
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container above">
+        <div class="footerText col col-3">
+          <p>Fooþjónustan<br>123-4567</p>
+        </div>
+        <div class="footerText col col-3">
+          <p>Opið 12-13 alla daga<br>Bargata 1<br>900 Foobar</p>
+        </div>
+      </div>
+      <div class="container below">
+        <div class="footerText">
+          <p>© Fooþjónustan 2017</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

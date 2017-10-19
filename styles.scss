@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+/* Global, hefur áhrif allstaðar á allar síður. */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  overflow: hidden;
+}
+
+body { /* stylelint-disable-line */
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* stylelint-disable-line */ h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+
+h1 { /* stylelint-disable-line */
+  font-size: 4.5em;
+}
+
+h2 { /* stylelint-disable-line */
+  font-size: 2.25em;
+}
+
+h3 { /* stylelint-disable-line */
+  font-size: 1.5em;
+}
+
+/* Style fyrir header sem skarast ekki við neitt annað. */
+header .container { /* stylelint-disable-line */
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+header #branding { /* stylelint-disable-line */
+  float: left;
+  font-family: "Roboto Slab", serif; /* "Fooþjónustan" er link svo hérna læt ég það líta út eins og h3. */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav { /* stylelint-disable-line */
+  float: right;
+  padding-right: 30px;
+  margin-top: 5px;
+}
+
+header a { /* stylelint-disable-line */
+  padding: 8px 15px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header li { /* stylelint-disable-line */
+  display: inline;
+}
+
+.buyButton {
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 5px;
+  transition: background-color 500ms ease, color 500ms ease;
+}
+
+.buyButton:hover {
+  background-color: #404040;
+  border: 1px solid #ccc;
+}
+
+/* Style fyrir bakgrunn */
+.background {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
+  background: transparent url("bg-subpage.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 0.8;
+  justify-content: center;
+}
+
+.background .title {
+  margin: 20px;
+  color: #fff;
+}
+
+.background .title h1 {/* stylelint-disable-line */
+  margin: 20px;
+  font-size: 3.75em;
+  color: #fff;
+  word-break: break-word;
+}
+
+/* .button og .button a -- sameiginlegt fyrir alla stóra takkana á forsíðu og kaupa síðu. */
+.button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+/* stylelint-disable-line */ button,
+.button a,
+.button input {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 2.25em;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #595959;
+  border: none; /* stylelint-disable-line */
+  border-radius: 5px;
+  transition: background-color 500ms ease;
+}
+
+/* stylelint-disable-line */ button:hover,
+.button a:hover {
+  background-color: #333;
+}
+
+/* Style fyrir main, þ.e. allt sem er inná hvíta svæðinu á síðunni. Hér er flest allt sett í grid. */
+main { /* stylelint-disable-line */
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main section { /* stylelint-disable-line */
+  margin-top: 12em;
+  margin-bottom: 12em;
+}
+
+img { /* stylelint-disable-line */
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
+
+.col {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+@media (max-width: 599px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+}
+@media (max-width: 399px) {
+  .col-sm2-12 {
+    width: 100%;
+  }
+
+  .col-sm2-6 {
+    width: 50%;
+  }
+}
+
+/* Style fyrir footer. */
+footer { /* stylelint-disable-line */
+  color: #e6e6e6;
+  text-align: center;
+  background-color: #333;
+}
+
+footer .container { /* stylelint-disable-line */
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+footer .above { /* stylelint-disable-line */
+  display: flex;
+  padding-bottom: 2em;
+  border-bottom: 3px solid #909090;
+  justify-content: center;
+}
+
+footer .below { /* stylelint-disable-line */
+  font-size: 0.875em;
+  color: #999;
+}
+
+/* Style fyrir breytingar undir 600px skjástærð */
+@media (max-width: 599px) {
+  main { /* stylelint-disable-line */
+    padding-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 399px) {
+  .col {
+    width: 100%; /* öll column taa 100% width */
+  }
+
+  header nav { /* stylelint-disable-line */
+    padding-right: 15px;
+  }
+}
+
+@import "scss/index";
+@import "scss/buy";
+@import "scss/about";
