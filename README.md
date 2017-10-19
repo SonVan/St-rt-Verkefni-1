@@ -12,4 +12,11 @@ Til dæmis er núverandi styles.scss tengd þremur öðrum .scss skrám:
 
 Elements.html er til skoðunar á því hvernig síða á almennt að líta út en hefur ekki beina áhrif á verkefnið. Það á ekki að tengja elements.css við html síðurnar því það er ekki gert til þess styðja css kóðann. Í staðinn er það mikilvæga sem er í elements.css búið að skrifa beint inn í styles.scss. 
 
-Vinna skal verkefnið gengum Github https://github.com/SonVan/StortVerkefni1 í "master" branch
+Allt er stílað samkvæmt .stylelintrc skrá sem er í möppunni
+
+Vinna skal verkefnið í gengum Github https://github.com/SonVan/StortVerkefni1 í "master" branch og skila skal öllum tilbúnum síðum inná "Final" branch.
+
+
+Kristín Henný - khi4@hi.is
+Son Van Nguyen - svn5@hi.is
+Þór Sverrisson - ths220@hi.is
